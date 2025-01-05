@@ -23,7 +23,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-black flex justify-center">
+    <nav className="sticky top-0 z-50  flex justify-center">
       {/* Full Navbar for larger screens */}
       <ol className="hidden md:flex bg-[#1b1b1b] text-white items-center justify-around h-16 w-11/12 rounded-b-lg shadow-lg">
         <ul className="flex gap-11">

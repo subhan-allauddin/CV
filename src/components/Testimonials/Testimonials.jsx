@@ -44,7 +44,7 @@ function TestimonialPage() {
   ];
 
   return (
-    <div className="font-sans mt-[140px] p-[20px] bg-gray-600 overflow-hidden">
+    <div className="font-sans p-[20px] bg-gray-600 overflow-hidden">
       <section className="my-10 text-center">
         <h1 className="my-2 text-4xl font-bold text-white">Hear From Our Clients</h1>
         <h2 className="text-xl font-semibold text-white">Real Stories, Real People</h2>

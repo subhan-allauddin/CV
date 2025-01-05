@@ -35,23 +35,23 @@ function CaseStudies() {
   ];
 
   return (
-    <main>
-      <div className="flex flex-col items-center justify-center p-23">
-        <h1 className="mb-5 text-4xl font-bold leading-6 tracking-wide text-center text-black font-raleway">
-          Case Studies
-        </h1>
-        <p className="w-1/3 font-thin tracking-wide text-center text-custom-gray ng-7 font-ibm-plex-mono sm:text-sm sm:leading-6 sxl:w-306 ssm-400">
-          Solving user & business problems since last 15+ years.Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <div className="pl-160 pr-160 flex flex-col gap-[39px] w-full">
-        {caseStudies.map((study, index) => (
-          <CaseStudyCard key={index} {...study} />
-        ))}
-      </div>
-    </main>
+<main>
+    <div className="flex flex-col items-center justify-center px-4 py-8 sm:px-6 sm:py-12">
+      <h1 className="mb-5 text-2xl font-bold leading-6 tracking-wide text-center text-black font-raleway sm:text-xl">
+        Case Studies
+      </h1>
+      <p className="w-full text-sm font-thin tracking-wide text-center text-custom-gray font-ibm-plex-mono sm:w-4/5">
+        Solving user & business problems for the last 15+ years. Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <div className="px-4 sm:px-6 flex flex-col gap-6 w-full">
+      {caseStudies.map((study, index) => (
+        <CaseStudyCard key={index} {...study} />
+      ))}
+    </div>
+  </main>
   );
 }
 
