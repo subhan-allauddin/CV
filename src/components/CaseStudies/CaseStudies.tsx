@@ -34,9 +34,10 @@ function CaseStudies() {
     },
   ];
 
+  
   return (
-<main>
-    <div className="flex flex-col items-center justify-center px-4 py-8 sm:px-6 sm:py-12">
+  <main>
+    <div className="flex flex-col items-center justify-center px-4 py-8 sm:px-6 sm:py-12" id="helloSubhan">
       <h1 className="mb-5 text-2xl font-bold leading-6 tracking-wide text-center text-black font-raleway sm:text-xl">
         Case Studies
       </h1>
@@ -46,7 +47,7 @@ function CaseStudies() {
         incididunt ut labore et dolore magna aliqua.
       </p>
     </div>
-    <div className="px-4 sm:px-6 flex flex-col gap-6 w-full">
+    <div className="flex flex-col w-full gap-6 px-4 sm:px-6">
       {caseStudies.map((study, index) => (
         <CaseStudyCard key={index} {...study} />
       ))}

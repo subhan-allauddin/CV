@@ -58,35 +58,43 @@ function TestimonialPage() {
       {/* Infinite Scrolling Testimonials */}
       <div className="relative w-full overflow-hidden">
         <div className="flex w-max animate-scroll">
-          {testimonials.concat(testimonials).map(({ id, name, review, rating, avatar }, index) => (
-            <div
-              key={id}
-              className="flex-none w-80 p-6 bg-gray-100 rounded-lg shadow-lg m-4"
-            >
-              <img
-                src={avatar}
-                alt={name}
-                className="w-16 h-16 mx-auto rounded-full"
-              />
-              <div className="mt-4">
-                <h5 className="mb-2 text-xl font-bold">{name}</h5>
-                <p className="mb-4 text-gray-700">{review}</p>
-                <div className="flex justify-center mb-4">
-                  {Array.from({ length: rating }, (_, i) => (
-                    <AiFillStar key={i} className="text-yellow-500" />
-                  ))}
-                  {Array.from({ length: 5 - rating }, (_, i) => (
-                    <AiOutlineStar key={i} className="text-yellow-500" />
-                  ))}
-                </div>
-                <div className="flex justify-center space-x-4">
-                  <AiFillFacebook className="text-2xl text-blue-600" />
-                  <AiFillTwitterSquare className="text-2xl text-blue-400" />
-                  <AiFillInstagram className="text-2xl text-pink-600" />
+          {testimonials.concat(testimonials).map(
+            ({ id, name, review, rating, avatar }, index) => (
+              <div
+                key={`${id}-${index}`} // Unique key fix
+                className="flex-none w-80 p-6 bg-gray-100 rounded-lg shadow-lg m-4"
+              >
+                <img
+                  src={avatar}
+                  alt={name}
+                  className="w-16 h-16 mx-auto rounded-full"
+                />
+                <div className="mt-4">
+                  <h5 className="mb-2 text-xl font-bold">{name}</h5>
+                  <p className="mb-4 text-gray-700">{review}</p>
+                  <div className="flex justify-center mb-4">
+                    {Array.from({ length: rating }, (_, i) => (
+                      <AiFillStar
+                        key={`filled-${i}`}
+                        className="text-yellow-500"
+                      />
+                    ))}
+                    {Array.from({ length: 5 - rating }, (_, i) => (
+                      <AiOutlineStar
+                        key={`empty-${i}`}
+                        className="text-yellow-500"
+                      />
+                    ))}
+                  </div>
+                  <div className="flex justify-center space-x-4">
+                    <AiFillFacebook className="text-2xl text-blue-600" />
+                    <AiFillTwitterSquare className="text-2xl text-blue-400" />
+                    <AiFillInstagram className="text-2xl text-pink-600" />
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </div>

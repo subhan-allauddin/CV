@@ -31,7 +31,7 @@ function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/About">Case Studios</Link>
+            <Link href="/CaseStudios/Casestudies#helloSubhan">Case Studios</Link>
           </li>
           <li>
             <Link href="/Contact">Testimonials</Link>
