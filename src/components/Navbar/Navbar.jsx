@@ -31,7 +31,7 @@ function Navbar() {
             <Link href="#home">Home</Link>
           </li>
           <li>
-          <Link href="#helloSubhan">Case Studios</Link>
+            <Link href="#helloSubhan">Case Studios</Link>
           </li>
           <li>
             <Link href="#timeline">Timeline</Link>
@@ -43,15 +43,26 @@ function Navbar() {
         <ul className="flex gap-4">
           <li>
             <Link href="" target="_blank">
-            <FontAwesomeIcon icon={faLinkedin} size="sm" className="w-5 h-5" />
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="sm"
+                className="w-5 h-5"
+              />
             </Link>
           </li>
           <li>
             <FontAwesomeIcon icon={faTwitter} size="sm" className="w-5 h-5" />
           </li>
           <li>
-            <Link href="https://www.instagram.com/subhan_40.75/" target="_blank">
-            <FontAwesomeIcon icon={faInstagram} size="sm" className="w-5 h-5" />
+            <Link
+              href="https://www.instagram.com/subhan_40.75/"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                size="sm"
+                className="w-5 h-5"
+              />
             </Link>
           </li>
         </ul>
@@ -67,7 +78,10 @@ function Navbar() {
           />
           <h1 className="text-lg font-semibold">Portfolio</h1>
         </div>
-        <div className="flex flex-col gap-1 cursor-pointer" onClick={toggleMenu}>
+        <div
+          className="flex flex-col gap-1 cursor-pointer"
+          onClick={toggleMenu}
+        >
           <div className="bg-white h-0.5 w-5"></div>
           <div className="bg-white h-0.5 w-5"></div>
           <div className="bg-white h-0.5 w-5"></div>
@@ -76,31 +90,48 @@ function Navbar() {
 
       {/* Sliding Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-gray-900 text-white transform ${menuOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out z-50 md:hidden`}
+        className={`fixed top-0 right-0 h-full w-64 bg-gray-900 text-white transform ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out z-50 md:hidden`}
       >
         <ul className="pt-8 space-y-6 text-center">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="#home">Home</Link>
           </li>
           <li>
-          <Link href="#helloSubhan">Case Studios</Link>
+            <Link href="#helloSubhan">Case Studios</Link>
           </li>
           <li>
-            <Link href="/Timeline/Timeline.tsx">Testimonials</Link>
+            <Link href="#timeline">Timeline</Link>
           </li>
           <li>
-            <Link href="/Projects">Recent Work</Link>
+            <Link href="#Testimonials">Testimoials</Link>
           </li>
         </ul>
         <ul className="flex justify-center gap-4 mt-8">
           <li>
-            <FontAwesomeIcon icon={faLinkedin} size="sm" className="w-5 h-5" />
+            <Link href="" target="_blank">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="sm"
+                className="w-5 h-5"
+              />
+            </Link>
           </li>
           <li>
             <FontAwesomeIcon icon={faTwitter} size="sm" className="w-5 h-5" />
           </li>
           <li>
-            <FontAwesomeIcon icon={faInstagram} size="sm" className="w-5 h-5" />
+            <Link
+              href="https://www.instagram.com/subhan_40.75/"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                size="sm"
+                className="w-5 h-5"
+              />
+            </Link>
           </li>
         </ul>
         <div className="flex items-center justify-center mt-6">
