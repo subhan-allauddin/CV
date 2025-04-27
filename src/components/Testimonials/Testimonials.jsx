@@ -44,7 +44,7 @@ function TestimonialPage() {
   ];
 
   return (
-    <div className="font-sans p-[20px] bg-gray-600 overflow-hidden">
+    <div className="font-sans p-[20px] bg-gray-600 overflow-hidden" id="Testimonials">
       <section className="my-10 text-center">
         <h1 className="my-2 text-4xl font-bold text-white">Hear From Our Clients</h1>
         <h2 className="text-xl font-semibold text-white">Real Stories, Real People</h2>
@@ -62,7 +62,7 @@ function TestimonialPage() {
             ({ id, name, review, rating, avatar }, index) => (
               <div
                 key={`${id}-${index}`} // Unique key fix
-                className="flex-none w-80 p-6 bg-gray-100 rounded-lg shadow-lg m-4"
+                className="flex-none p-6 m-4 bg-gray-100 rounded-lg shadow-lg w-80"
               >
                 <img
                   src={avatar}

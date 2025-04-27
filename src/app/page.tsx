@@ -10,14 +10,14 @@ import TimelineDemo from "@/components/Timeline/TimelineDemo";
 
 export default function Home() {
   return (
-       <>
+       <div className="scroll-smooth">
         <Navbar />
          <Portfolio />
-         <CaseStudies/>
+         <CaseStudies />
          <TimelineDemo />
          <Testimonials />
          <Footer />
-       </>
+       </div>
 
        
   );

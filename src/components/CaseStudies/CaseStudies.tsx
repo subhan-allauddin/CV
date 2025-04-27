@@ -36,7 +36,7 @@ function CaseStudies() {
 
   
   return (
-  <main>
+  <main id="helloSubhan">
     <div className="flex flex-col items-center justify-center px-4 py-8 sm:px-6 sm:py-12" id="helloSubhan">
       <h1 className="mb-5 text-2xl font-bold leading-6 tracking-wide text-center text-black font-raleway sm:text-xl">
         Case Studies
