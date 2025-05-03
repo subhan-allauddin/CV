@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { useEffect } from "react";
 import { cn } from "@/components/lib/utils";
@@ -20,8 +21,7 @@ import "aos/dist/aos.css";
 interface GridItem {
   title: string;
   description: string;
-  header: JSX.Element;
- 
+  header: React.JSX.Element; // Changed from JSX.Element to React.JSX.Element
 }
 
 // Common image styling
